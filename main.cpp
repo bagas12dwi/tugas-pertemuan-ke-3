@@ -5,21 +5,32 @@
 using namespace std;
 
 main(){
-    int a = 3, b = 4, c, n, i, un=0;
-    cout << "Masukkan banyak nya suku ke n  : ";
-    cin >> n;
-    cout << "Deret ke-"<< n << " : ";
-    cout <<a<<" ";
-    un = un +a;
-    for (i = 0; i < n-1; i++)
+    int a = 0, b, c, jumlah = 0, i, n = 6, j, x ;
+    cout << "-------------------------------------------\n";
+    cout << "-----PROGRAM Menghitung 6 Suku Pertama-----\n";
+    cout << "-------------------------------------------\n";
+    cout <<"\n";
+    cout << "Masukkan bilangan awal : ";
+    cin >> a;
+    j=a;
+    for (i = 1; i <=6; i++)
     {
-        c = a + b;
-        a = c;
-        cout << c << " ";
-        un = un + c;
+        cout<<a<<"^3 ";
+        a++;
+    }
+    cout<<"\n";
+
+    for (i = 1; i <=6; i++)
+    {
+        
+        cout<<j*j*j<<" ";
+        jumlah = jumlah + (j*j*j);
+        j++;
     }
 
-    cout << "\nJumlah nya adalah : ";
-    cout << un;
+    cout << "\nJumlah 6 suku pertama : "<<jumlah;
+    cout << "\n";
+    
+    
     
 }
